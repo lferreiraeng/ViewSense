@@ -1,6 +1,9 @@
 {
-  "name": "viewsense",
+  "name": "@lferreiraeng/viewsense",
   "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Give your AI coding agent eyes: navigate, screenshot, record video, inspect elements and measure performance of your running web app. Cuts token spend and time.",
   "type": "module",
   "bin": {

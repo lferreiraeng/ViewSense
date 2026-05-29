@@ -4,7 +4,7 @@ Dê olhos pro seu agente de IA. Em vez de só *ler* o código, ele passa a naveg
 
 ![ViewSense demo](https://raw.githubusercontent.com/lferreiraeng/ViewSense/main/docs/demo.gif)
 
-[![npm](https://img.shields.io/npm/v/viewsense.svg)](https://www.npmjs.com/package/viewsense)
+[![npm](https://img.shields.io/npm/v/@lferreiraeng/viewsense.svg)](https://www.npmjs.com/package/@lferreiraeng/viewsense)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 [![node](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg)](https://nodejs.org)
 
@@ -33,16 +33,16 @@ Precisa de Node.js 18 ou superior.
 
 ```bash
 # no seu projeto
-npm install --save-dev viewsense
+npm install --save-dev @lferreiraeng/viewsense
 
 # baixe o browser do Playwright (uma vez só, ~150MB)
 npx playwright install chromium
 ```
 
-Ou rode sem instalar:
+Depois de instalado, o comando é `viewsense` (ou `vs`). Ou rode sem instalar:
 
 ```bash
-npx viewsense --help
+npx @lferreiraeng/viewsense --help
 ```
 
 ## Começando em 30 segundos
