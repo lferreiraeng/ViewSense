@@ -1,0 +1,42 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "outDir": "./.viewsense",
+
+  "device": null,
+  "viewport": { "width": 1440, "height": 900 },
+  "waitAfterLoad": 1500,
+  "locale": "pt-BR",
+  "timezoneId": "America/Sao_Paulo",
+
+  "routes": [
+    { "name": "home",    "path": "/" },
+    { "name": "login",   "path": "/login" },
+    { "name": "feed",    "path": "/feed",            "auth": true },
+    { "name": "ranking", "path": "/ranking",         "auth": true },
+    { "name": "perfil",  "path": "/user/exemplo",    "auth": true }
+  ],
+
+  "auth": {
+    "strategy": "manual",
+    "storageState": "./.viewsense/auth.json",
+    "loginPath": "/login",
+
+    "_comment_form": "Use strategy:'form' p/ login automático. Credenciais SEMPRE via env: VIEWSENSE_EMAIL / VIEWSENSE_PASSWORD.",
+    "form": {
+      "emailSelector": "input[type=email]",
+      "passwordSelector": "input[type=password]",
+      "submitSelector": "button[type=submit]"
+    },
+
+    "_comment_token": "Use strategy:'token' p/ injetar um JWT/sessão já existente no localStorage.",
+    "token": {
+      "key": "minha-chave-de-sessao",
+      "fromEnv": "VIEWSENSE_SESSION"
+    }
+  },
+
+  "_comment_init": "JS injetado e executado em toda página (instruções diretas, NÃO uma função). Útil pra fechar cookie banners.",
+  "initScripts": [
+    "try { localStorage.setItem('cookie_consent', 'accepted'); } catch (e) {}"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "viewsense",
+  "version": "0.1.0",
+  "description": "Give your AI coding agent eyes: navigate, screenshot, record video, inspect elements and measure performance of your running web app. Cuts token spend and time.",
+  "type": "module",
+  "bin": {
+    "viewsense": "bin/cli.mjs",
+    "vs": "bin/cli.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "examples",
+    "viewsense.config.example.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "setup": "playwright install chromium",
+    "postinstall": "node bin/postinstall.mjs"
+  },
+  "keywords": [
+    "playwright",
+    "ai",
+    "agent",
+    "claude",
+    "claude-code",
+    "cursor",
+    "copilot",
+    "llm",
+    "screenshot",
+    "video",
+    "browser",
+    "automation",
+    "visual",
+    "inspect",
+    "performance",
+    "tokens"
+  ],
+  "author": "lferreiraeng",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lferreiraeng/ViewSense.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lferreiraeng/ViewSense/issues"
+  },
+  "homepage": "https://github.com/lferreiraeng/ViewSense#readme"
+}

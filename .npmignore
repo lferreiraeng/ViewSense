@@ -1,0 +1,12 @@
+.viewsense/
+node_modules/
+*.log
+.env
+.env.local
+auth.json
+*-auth.json
+docs/
+scripts/
+.github/
+test/
+tests/

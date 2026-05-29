@@ -1,0 +1,10 @@
+node_modules/
+.viewsense/
+*.log
+.DS_Store
+
+# NUNCA versione sessões — contêm tokens/cookies de autenticação reais.
+auth.json
+*-auth.json
+.env
+.env.local
